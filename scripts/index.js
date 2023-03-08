@@ -10,11 +10,11 @@ let formElement = document.querySelector(".popup__form");
 const toggleOpenPopup = function () {
   userName.value = profileTitle.textContent;
   userAbout.value = profileSubtitle.textContent;
-  popup.classList.toggle(".popup_opened");
+  popup.classList.toggle("popup_opened");
 };
 
 const toggleClosePopup = function () {
-  popup.classList.toggle(".popup_opened");
+  popup.classList.toggle("popup_opened");
 };
 
 function handleFormSubmit(evt) {
