@@ -1,0 +1,9 @@
+.elements__grid {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 282px);
+    justify-items: center;
+    gap: 20px 17px;
+    margin: 0 auto;
+    padding: 0;
+}

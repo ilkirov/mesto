@@ -1,0 +1,14 @@
+.element__edit-like-button {
+    background-image: url(../../../images/like_button.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 30px 30px 30px 30px;
+    min-width: 22px;
+    min-height: 19px;
+}
+.element__edit-like-button:hover {
+    opacity: 0.5;
+}
