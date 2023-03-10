@@ -1,6 +1,6 @@
 .element__info {
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: space-between;
     background-color: #fff;
     border-bottom-left-radius: 10px;

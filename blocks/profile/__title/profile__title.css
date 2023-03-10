@@ -6,7 +6,15 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     margin-top: 23px;
     margin-bottom: 8px;
+}
+@media screen and (min-width: 319px) and (max-width: 1279px) {
+    .profile__title {
+        max-width: 189px;
+        font-size: 27px;
+        line-height: 33px;
+    }
 }
