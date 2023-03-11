@@ -2,21 +2,21 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="./pages/index.css"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
   <title>Mesto Russia</title>
 </head>
 
 <body class="page">
   <header class="header">
-    <img class="header__logo" src="./images/logo_mesto.svg" alt="Верхний логотип"/>
+    <img class="header__logo" src="./images/logo_mesto.svg" alt="Верхний логотип">
   </header>
 
   <main class="content">
     <section class="profile">
-      <img class="profile__avatar" src="./images/avatar.svg" alt="Аватар пользователя"/>
+      <img class="profile__avatar" src="./images/avatar.svg" alt="Аватар пользователя">
       <div class="profile__info">
         <div class="profile__wrapper">
           <h1 class="profile__title">Жак-Ив Кусто</h1>
@@ -27,51 +27,51 @@
       <button class="profile__add-button" type="button"></button>
     </section>
 
-    <section class="elements">
-      <div class="elements__grid">
-        <div class="element">
-          <img class="element__image" src="./images/place-altai.jpg" alt="Алтайский Лес"/>
+    <section class="elements" aria-label="Раздел с фотографиями">
+      <article class="elements__grid" aria-label="Сетка фотографий">
+        <article class="element" aria-label="Карточка с фотографией Алтая">
+          <img class="element__image" src="./images/place-altai.jpg" alt="Алтайский Лес">
           <div class="element__info">
             <h2 class="element__title">Алтай</h2>
-            <button class="element__edit-like-button" type="button"></button>
+            <button class="element__like-button" type="button"></button>
           </div>
-        </div>
-        <div class="element">
-          <img class="element__image" src="./images/place-karelia.jpg" alt="Лес Карелии"/>
+        </article>
+        <article class="element" aria-label="Карточка с фотографией Карелии">
+          <img class="element__image" src="./images/place-karelia.jpg" alt="Лес Карелии">
           <div class="element__info">
             <h2 class="element__title">Карелия</h2>
-            <button class="element__edit-like-button" type="button"></button>
+            <button class="element__like-button" type="button"></button>
           </div>
-        </div>
-        <div class="element">
-          <img class="element__image" src="./images/place-kosa.jpg" alt="Куршская Коса"/>
+        </article>
+        <article class="element" aria-label="Карточка с фотографией Куршской Косы">
+          <img class="element__image" src="./images/place-kosa.jpg" alt="Куршская Коса">
           <div class="element__info">
             <h2 class="element__title">Куршская Коса</h2>
-            <button class="element__edit-like-button" type="button"></button>
+            <button class="element__like-button" type="button"></button>
           </div>
-        </div>
-        <div class="element">
-          <img class="element__image" src="./images/photo-grid-kamchatka-2.jpg" alt="Камчатка"/>
+        </article>
+        <article class="element" aria-label="Карточка с фотографией Камчатки">
+          <img class="element__image" src="./images/photo-grid-kamchatka-2.jpg" alt="Камчатка">
           <div class="element__info">
             <h2 class="element__title">Камчатка</h2>
-            <button class="element__edit-like-button" type="button"></button>
+            <button class="element__like-button" type="button"></button>
           </div>
-        </div>
-        <div class="element">
-          <img class="element__image" src="./images/photo-grid-baikal-2.jpg" alt="Горный Байкал"/>
+        </article>
+        <article class="element" aria-label="Карточка с фотографией Байкала">
+          <img class="element__image" src="./images/photo-grid-baikal-2.jpg" alt="Горный Байкал">
           <div class="element__info">
             <h2 class="element__title">Байкал</h2>
-            <button class="element__edit-like-button" type="button"></button>
+            <button class="element__like-button" type="button"></button>
           </div>
-        </div>
-        <div class="element">
-          <img class="element__image" src="./images/photo-grid-sochi.jpg" alt="Туманный лес Сочи"/>
+        </article>
+        <article class="element" aria-label="Карточка с фотографией Сочи">
+          <img class="element__image" src="./images/photo-grid-sochi.jpg" alt="Туманный лес Сочи">
           <div class="element__info">
             <h2 class="element__title">Сочи</h2>
-            <button class="element__edit-like-button" type="button"></button>
+            <button class="element__like-button" type="button"></button>
           </div>
-        </div>
-      </div>
+        </article>
+      </article>
     </section>
   </main>
 
@@ -80,15 +80,15 @@
   </footer>
 
   <div class="popup">
-    <div class="popup__contain">
+    <div class="popup__container">
       <h2 class="popup__title">Редактировать профиль</h2>
       <form class="popup__form" name="form">
-        <input class="popup__input" type="text" name="name" placeholder="Имя" id="name-input" value=""/>
-        <input class="popup__input" type="text" name="about" placeholder="О себе" id="about-input" value=""/>
+        <input class="popup__input" type="text" name="name" placeholder="Имя" id="name-input" value="">
+        <input class="popup__input" type="text" name="about" placeholder="О себе" id="about-input" value="">
         <button class="popup__save-button" type="submit">Сохранить</button>
       </form>
-    </div>
-    <button class="popup__close" type="button"></button>
+      <button class="popup__close" type="button"></button>
+    </div>    
   </div>
   <script src="./scripts/index.js"></script>
 </body>

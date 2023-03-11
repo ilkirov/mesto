@@ -1,4 +1,4 @@
-.element__edit-like-button {
+.element__like-button {
     background-image: url(../../../images/like_button.svg);
     background-repeat: no-repeat;
     background-color: transparent;
@@ -10,6 +10,6 @@
     min-width: 22px;
     min-height: 19px;
 }
-.element__edit-like-button:hover {
+.element__like-button:hover {
     opacity: 0.5;
 }

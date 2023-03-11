@@ -14,7 +14,7 @@ const toggleOpenPopup = function () {
 };
 
 const toggleClosePopup = function () {
-  popup.classList.toggle("popup_opened");
+  popup.classList.remove("popup_opened");
 };
 
 function handleFormSubmit(evt) {
