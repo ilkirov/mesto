@@ -9,15 +9,16 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 267px;
-    align-items: center;
-    margin-bottom: 36px;
+    
+    display: flex;
+    margin-bottom: 35px;
 }
 @media screen and (min-width: 319px) and (max-width: 1279px) {
     .profile__subtitle {
-        max-width: 240px;
-        margin-right: 4px;
-        margin-left: 44px;
+        max-width: 240px; 
         font-size: 14px;
         line-height: 17px;
+        align-items: center;
+        margin-bottom: 33px;
     }
 }

@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-color: transparent;
     background-position: center;
+    background-size: contain;
     width: 24px;
     height: 24px;
     border: 1px solid #FFFFFF;

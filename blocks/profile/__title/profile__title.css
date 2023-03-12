@@ -1,7 +1,7 @@
 .profile__title {
     font-size: 42px;
     line-height: 48px;
-    font-weight: 900;
+    font-weight: 500;
     font-style: normal;
     overflow: hidden;
     white-space: nowrap;
@@ -9,14 +9,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin-top: 23px;
+    margin-top: 22px;
+    display: flex;
     align-items: center;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
 @media screen and (min-width: 319px) and (max-width: 1279px) {
     .profile__title {
         max-width: 189px;
         font-size: 27px;
         line-height: 33px;
+        margin-bottom: 6px;
+        margin-top: 27px;
     }
 }

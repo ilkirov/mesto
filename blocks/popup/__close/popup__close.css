@@ -9,7 +9,7 @@
     height: 32px;
     padding: 0;
     right: -40px;
-    top: -38px;
+    top: -39px;
     position: absolute;
 }
 .popup__close:hover {
@@ -17,8 +17,10 @@
 }
 @media screen and (max-width: 768px) {
     .popup__close {
+        background-image: url(../../../images/close_button2.svg);
         width: 20px;
         height: 20px;
         right: 0;
+        top: -37px;
     }
 }
