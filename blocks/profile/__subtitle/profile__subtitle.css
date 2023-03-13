@@ -2,14 +2,14 @@
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
-    flex-direction: column;
     margin: 0;
     padding: 0;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 267px;
-    display: flex;
+    /*display: flex; 
+    flex-direction: column;*/
     margin-bottom: 35px;
 }
 @media screen and (min-width: 319px) and (max-width: 1279px) {
@@ -17,7 +17,8 @@
         max-width: 240px;
         font-size: 14px;
         line-height: 17px;
-        align-items: center;
+        /* align-items: center; */
         margin-bottom: 33px;
+        margin-left: 44px;
     }
 }

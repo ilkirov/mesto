@@ -10,9 +10,10 @@
     padding: 0;
     box-sizing: border-box;
     margin-top: 22px;
-    display: flex;
-    align-items: center;
+    /*display: flex;
+    align-items: center;*/
     margin-bottom: 8px;
+    width: 294px;
 }
 @media screen and (min-width: 319px) and (max-width: 1279px) {
     .profile__title {
