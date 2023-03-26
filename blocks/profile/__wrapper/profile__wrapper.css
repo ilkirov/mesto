@@ -1,13 +1,7 @@
 .profile__wrapper {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 17px;
-    max-width: 350px;
-}
-@media screen and (min-width: 319px) and (max-width: 1279px) {
-    .profile__wrapper {
-        margin: 0 0 0 28px;
-        gap: 8px;
-    }
+    flex-wrap: wrap;
+    column-gap: 18px;
+    padding: 22px 0 8px;
+    align-items: center;
 }

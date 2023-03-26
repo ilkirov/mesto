@@ -6,21 +6,13 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    max-width: 294px;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    margin-top: 22px;
-    /*display: flex;
-    align-items: center;*/
-    margin-bottom: 8px;
-    width: 294px;
 }
-@media screen and (min-width: 319px) and (max-width: 1279px) {
+@media screen and (max-width: 400px) {
     .profile__title {
-        max-width: 189px;
         font-size: 27px;
         line-height: 33px;
-        margin-bottom: 6px;
-        margin-top: 27px;
+        margin: 0 auto;
     }
 }

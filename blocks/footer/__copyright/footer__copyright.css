@@ -3,10 +3,10 @@
     line-height: 22px;
     font-weight: 400;
     color: #545454;
+    max-width: 318px;
     margin: 0;
-    padding: 0;
 }
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 510px) {
     .footer__copyright {
         font-size: 14px;
         line-height: 17px;

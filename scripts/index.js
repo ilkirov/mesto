@@ -38,35 +38,35 @@ const titlePopup = popupOpenImage.querySelector(".popup__title_image");
 //изображения
 const initialCards = [
   {
-    name: "Архыз",
-    link: "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg",
-    alt: "Архыз",
+    name: 'Архыз',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
+    alt: 'Архыз'
   },
   {
-    name: "Челябинская область",
-    link: "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg",
-    alt: "Челябинская область",
+    name: 'Челябинская область',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg',
+    alt: 'Челябинская область'
   },
   {
-    name: "Санкт-Петербург",
-    link: "https://pichttps://unsplash.com/photos/SYftntQLNNotures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg",
-    alt: "Санкт-Петербург",
+    name: 'Иваново',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg',
+    alt: 'Иваново'
   },
   {
-    name: "Заснеженный велосипед",
-    link: "https://unsplash.com/photos/Qy7RBgth2vA",
-    alt: "Заснеженный велосипед",
+    name: 'Камчатка',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg',
+    alt: 'Камчатка'
   },
   {
-    name: "Фасад Шанель",
-    link: "https://unsplash.com/photos/PgvcK98mlBM",
-    alt: "Фасад Шанель",
+    name: 'Холмогорский район',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg',
+    alt: 'Холмогорский район'
   },
   {
-    name: "БМВ Ромашка",
-    link: "https://unsplash.com/photos/DYsoZCeAOXY",
-    alt: "БМВ Ромашка",
-  },
+    name: 'Байкал',
+    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg',
+    alt: 'Байкал'
+  }
 ];
 
 function openPopup(popup) {
@@ -88,8 +88,10 @@ function addCardSubmit(evt) {
     link: linkInput.value,
     alt: nameMestoInput.value,
   };
+
   renderCard(card);
   evt.target.reset();
+  
   closeModal(popupAddMesto);
 }
 
@@ -97,12 +99,12 @@ function createCard(card) {
   const cardTemplate = document.querySelector(".template-card").content;
   const imageElement = cardTemplate.querySelector(".element").cloneNode(true);
   imageElement.querySelector(".element__title").textContent = card.name;
-  imageElement.querySelector(".element__mask-group").scr = card.link;
+  imageElement.querySelector(".element__mask-group").src = card.link;
   imageElement.querySelector(".element__mask-group").alt = card.alt;
   imageElement
     .querySelector(".element__like-button")
     .addEventListener("click", function (evt) {
-      evt.target.classList.toggle(".element__like-button_active");
+      evt.target.classList.toggle("element__like-button_active");
     });
 
   const buttonDelete = imageElement.querySelector(".element__delete-button");
