@@ -32,7 +32,7 @@ const elementsCon = document.querySelector(".elements");
 
 //картинка
 const imagePopup = popupOpenImage.querySelector(".popup__image");
-const titlePopup = popupOpenImage.querySelector(".popup__title_image");
+const titlePopup = popupOpenImage.querySelector(".popup__image-title");
 
 
 //изображения
