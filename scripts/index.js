@@ -75,7 +75,7 @@ function openPopup(popup) {
 function closeModal(popup) {
   popup.classList.remove("popup_opened");
 }
-function formProfileSubmitHandler(evt) {
+function handleProfileFormSubmit(evt) {
   evt.preventDefault();
   userName.textContent = nameInput.value;
   userAboutMe.textContent = aboutMeInput.value;
@@ -158,5 +158,5 @@ addButton.addEventListener("click", function () {
   openPopup(popupAddMesto);
 });
 
-formElementProfile.addEventListener("submit", formProfileSubmitHandler);
+formElementProfile.addEventListener("submit", handleProfileFormSubmit);
 formElementMesto.addEventListener("submit", addCardSubmit);

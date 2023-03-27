@@ -55,84 +55,73 @@
     </footer>
 
     <div class="popup popup_profile">
-      <div class="popup__content">
-        <div class="popup__container popup__container_profile">
-          <button
-            class="popup__close popup__close_profile"
-            type="button"
-          ></button>
-          <h2 class="popup__title popup__title_profile">
-            Редактировать профиль
-          </h2>
-          <form class="popup__form popup__form_profile" name="form">
-            <input
-              class="popup__input popup__input_type_name"
-              type="text"
-              name="name"
-              placeholder="Имя"
-              id="name-input"
-              value=""
-            />
-            <input
-              class="popup__input popup__input_type_about-me"
-              type="text"
-              name="about"
-              placeholder="О себе"
-              id="about-input"
-              value=""
-            />
-            <button class="popup__save-button" type="submit">Сохранить</button>
-          </form>
-        </div>
+      <div class="popup__container popup__container_profile">
+        <button
+          class="popup__close popup__close_profile"
+          type="button"
+        ></button>
+        <h2 class="popup__title popup__title_profile">Редактировать профиль</h2>
+        <form class="popup__form popup__form_profile" name="form">
+          <input
+            class="popup__input popup__input_type_name"
+            type="text"
+            name="name"
+            placeholder="Имя"
+            id="name-input"
+            value=""
+          />
+          <input
+            class="popup__input popup__input_type_about-me"
+            type="text"
+            name="about"
+            placeholder="О себе"
+            id="about-input"
+            value=""
+          />
+          <button class="popup__save-button" type="submit">Сохранить</button>
+        </form>
       </div>
     </div>
 
     <div class="popup popup_add-mesto">
-      <div class="popup__content">
-        <div class="popup__container popup__container_add-mesto">
+      <div class="popup__container popup__container_add-mesto">
+        <button
+          class="popup__close popup__close_add-mesto"
+          type="button"
+        ></button>
+        <h2 class="popup__title popup__title_add-mesto">Новое место</h2>
+        <form class="popup__form popup__form_add-mesto" name="form-add-mesto">
+          <input
+            class="popup__input popup__input_type_name-mesto"
+            type="text"
+            name="place"
+            placeholder="Название"
+            id="place-input"
+            value=""
+          />
+          <input
+            class="popup__input popup__input_type_link"
+            type="url"
+            name="link"
+            placeholder="Ссылка на картинку"
+            id="link-input"
+            value=""
+          />
           <button
-            class="popup__close popup__close_add-mesto"
-            type="button"
-          ></button>
-          <h2 class="popup__title popup__title_add-mesto">Новое место</h2>
-          <form class="popup__form popup__form_add-mesto" name="form-add-mesto">
-            <input
-              class="popup__input popup__input_type_name-mesto"
-              type="text"
-              name="place"
-              placeholder="Название"
-              id="place-input"
-              value=""
-            />
-            <input
-              class="popup__input popup__input_type_link"
-              type="url"
-              name="link"
-              placeholder="Ссылка на картинку"
-              id="link-input"
-              value=""
-            />
-            <button
-              class="popup__save-button popup__save-button-add-mesto"
-              type="submit"
-            >
-              Сохранить
-            </button>
-          </form>
-        </div>
+            class="popup__save-button popup__save-button-add-mesto"
+            type="submit"
+          >
+            Сохранить
+          </button>
+        </form>
       </div>
     </div>
 
     <div class="popup popup_image">
-      <div class="popup__content">
-        <div class="popup__container-image">
-          <button
-            class="popup__close popup__close_image"
-            type="button"
-          ></button>
-          <img src="#" alt="" class="popup__image" />
-          <p class="popup__image-title"></p>
-        </div>
+      <div class="popup__image-container">
+        <button class="popup__close popup__close_image" type="button"></button>
+        <img src="#" alt="" class="popup__image" />
+        <p class="popup__image-title"></p>
       </div>
     </div>
     <script src="./scripts/index.js"></script>
